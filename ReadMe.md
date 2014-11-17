@@ -3,4 +3,4 @@
 - BSD licensed with no dependencies (i.e. just drop the source file into your project)
 
 ## author ##
-	ĞÄÈÕÔÂ litbig@sina.com
+	å¿ƒæ—¥æœˆ litbig@sina.com
