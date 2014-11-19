@@ -298,7 +298,7 @@ bool ConHashRing<Node>::roundRobinNode(Node & val, Node & backup)
 
     uint32_t step = 0;
     const uint32_t MAX_STEP = m_mapHashCircle.size() / m_uHashReplicas;
-    while ((m_itRoundrobin->second == val) && (step < MAX_WEIGHT)) {
+    while ((m_itRoundrobin->second == val) && (step < MAX_STEP)) {
         if (++m_itRoundrobin == m_mapHashCircle.end()) {
             m_itRoundrobin = m_mapHashCircle.begin();
         }
