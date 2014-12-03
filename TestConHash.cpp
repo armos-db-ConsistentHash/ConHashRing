@@ -151,7 +151,7 @@ int main(int sz, char ** args)
         gettimeofday(&stv, NULL);
         uint64_t usec = (uint64_t)stv.tv_sec * 1000000 + stv.tv_usec + ::rand();
 
-        size_t len = ::snprintf(keybuf, 64, "%u-%llu", i, usec);
+        size_t len = ::snprintf(keybuf, 64, "%u-%ju", i, usec);
         McNode * uNode = NULL;
         mcRing.lookupNode(keybuf, len, uNode);
         mapNode2Count[uNode]++;
